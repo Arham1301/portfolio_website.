@@ -9,9 +9,14 @@
 @media (max-width: 1002px) {
     .main-body {
       display: grid; 
-      grid-template-rows: 1fr;
-
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      row-gap: 10vh;
       margin-bottom: max(10vh,100px);
+    }
+
+    .main-body{
+        margin-bottom: 10vh;
     }
 }
 
@@ -89,7 +94,6 @@
     margin-left: 15vw;
     margin-right: 15vw;
     justify-content: space-between;
-    position: sticky;
     
 }
 
