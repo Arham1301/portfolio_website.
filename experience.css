@@ -9,6 +9,15 @@ body{
     column-gap: 3vw;
 }
 
+.inner-body::-webkit-scrollbar {
+    display: none;
+}
+
+.inner-body{
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
 @media (max-width: 700px) {
     .main-body{
         display: grid;
