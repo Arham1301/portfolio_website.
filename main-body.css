@@ -6,7 +6,8 @@
     margin-bottom: 5vh;
 }
 
-@media (max-width: 857px) {
+
+@media (max-width: 757px) {
     .main-body {
       display: grid; 
       grid-template-columns: 1fr;
@@ -26,6 +27,8 @@
 
     
 }
+
+
 
 .main-body-1{
     background-color: rgb(27,27,27);
