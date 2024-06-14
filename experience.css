@@ -9,7 +9,7 @@ body{
     column-gap: 3vw;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     .main-body{
         display: grid;
         grid-template-columns: 1fr;
@@ -17,14 +17,14 @@ body{
     }
 
     .inner-body{
-        height: 40vh;
+        height: 50vh;
     }
 }
 
 .inner-body{
     height: 80vh;
     background-color: rgb(27,27,27);
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .inner-inner-body{
