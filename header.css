@@ -27,6 +27,8 @@
     background-color: rgb(27,27,27);
     border-radius: 20px;
     margin-bottom: 20px;
+    align-items: center;
+    
 }
 
 img{
@@ -43,10 +45,44 @@ img{
     width: 10vw;
 }
 
+.menu-btn{
+    display: none;
+}
 
+#click{
+    display: none;
+}
 
 @media (max-width: 757px) {
-    .text1{
-        display: none;
+    .menu-btn{
+        display: block;
+        margin-left: auto;
+        margin-right: 5vw;        
     }
+
+    .header-left{
+        position: fixed;
+        top: 5vh;
+        height: 100vh;
+        width: 90%;
+        left: -100%;
+        border-radius: 20px;
+        background: rgb(27,27,27);
+        display: block;
+        margin-top: 120px;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked ~ .header-left{
+        left: 5%;
+    }
+
+    
+
+    .mob-dev-adj
+    {
+        margin-top: 80px;
+        text-align: center;
+    }
+    
 }
