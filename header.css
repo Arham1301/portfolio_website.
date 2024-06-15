@@ -10,7 +10,7 @@
     color: white;
     font-weight: bold;
     font-family: "Tiny5", sans-serif;
-    font-size: max(0.5vw,24px);
+    font-size: max(0.1vw,20px);
     margin-left: 3vw;
     text-decoration: none;
     
@@ -37,9 +37,16 @@ img{
     display: flex;
     margin: left 5vw;
     align-items: center;
-    padding-left: 20vw;
 }
 
 .para{
     width: 10vw;
+}
+
+
+
+@media (max-width: 757px) {
+    .text1{
+        display: none;
+    }
 }
