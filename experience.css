@@ -1,110 +1,103 @@
-body{
-    background-color: rgb(17,17,17);
-    margin: 10vh 20vw 10vh 20vw;
-}
-
-.main-body{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3vw;
-}
-
-.inner-body::-webkit-scrollbar {
-    display: none;
-}
-
-.inner-body{
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
-}
-
-@media (max-width: 700px) {
-    .main-body{
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 10vh;
+/* General card styling */
+.card {
+    background-color: rgb(27, 27, 27); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin: 20px auto; 
+    max-width: 800px; 
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .card-title a {
+    text-decoration: none;
+    color: #26a69a; 
+  }
+  
+  .card-title a:hover {
+    text-decoration: underline;
+  }
+  
+  .role {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #d3d3d3; 
+  }
+  
+  .card ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+    color: #d3d3d3; 
+  }
+  
+  .card li {
+    margin-bottom: 10px;
+  }
+  
+ 
+  .card .image-container {
+    text-align: center; 
+    max-width: 150px; 
+    margin: 0 auto 20px; 
+  }
+  
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px; 
+  }
+  
+  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .card-action {
+    padding: 10px 20px;
+    background-color: #333; 
+    border-top: 1px solid #555; 
+  }
+  
+  .card-action span {
+    font-size: 14px;
+    color: #b0b0b0; 
+  }
+  
+ 
+  @media only screen and (max-width: 600px) {
+    .col.s12.m2, .col.s12.m10 {
+      width: 100%;
+      display: block;
+      text-align: center;
     }
-
-    .inner-body{
-        height: 50vh;
+  
+    .col.s12.m2 {
+      margin-bottom: 20px;
     }
-
-    .text{
-        font-size: 12px;
+  
+    .card-content {
+      padding: 10px;
     }
-}
-
-.inner-body{
-    height: 80vh;
-    background-color: rgb(27,27,27);
-    overflow: scroll;
-}
-
-.inner-inner-body{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    background-color: lightgray;
-    
-    
-}
-
-.inner-body:hover{
-    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.3);
-}
-
-img{
-    width: max(11vw,100px);
-   
-}
-
-.img-1{
-    padding: 10px 0px 10px 10px;
-}
-
-.text{
-    color: #006400;
-    font-weight: bold;
-    font-size: max(2vw,16px);
-    text-align: center;
-    padding-top: 10px;
-    
-}
-
-.text1{
-    color: white;
-    font-weight: 300;
-    font-size: max(1.1vw,12px);
-    text-align: center;
-    padding: 10px 0px 10px 0px;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    padding-bottom: 10px;
-}
-
-.text2{
-        color: white;
-        font-weight: 300;
-        font-size: max(1.1vw,12px);
-        margin-left: 1vw;
-        padding-bottom :10px;
-}
-
-.img2{
-    width: 100%;
-    height: 35vh;
-}
-
-#heading{
-    color: white;
-    padding: 0;
-    margin: 0;
-    margin-left: 1vw;
-}
-
-.wrapper{
-    height: 100%; /* Make sure the wrapper takes the full height of the parent */
-    overflow: auto; /* Enable scrolling within the wrapper */
-    padding: 10px;
-}
+  }
+  
+  
+  
