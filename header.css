@@ -53,7 +53,7 @@
     display: none;
 }
 
-@media (max-width: 757px) {
+@media (max-width: 800px) {
     .menu-btn{
         display: block;
         margin-left: auto;
