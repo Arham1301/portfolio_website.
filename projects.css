@@ -13,7 +13,7 @@
 }
 
 #projects .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -21,6 +21,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Center the cards */
+    
 }
 
 .project {
@@ -68,5 +69,15 @@
 
 .project-info a:hover {
     background-color: #e65c00; /* Darker orange on hover */
+}
+
+@media (max-width: 800px) {
+    #projects .container {
+        position: relative;
+        width: 160%;
+        right: 26vw;
+        margin: 0 auto;
+    }
+
 }
 
