@@ -65,7 +65,7 @@
     background-color: #e65c00; 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 757px) {
     #projects .container {
         position: relative;
         width: 160%;
